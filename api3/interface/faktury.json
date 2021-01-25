@@ -1,0 +1,90 @@
+[
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 1,
+        "NIP": "1122334455",
+        "Numer_faktury": "1/2015-04-23",
+        "Status": "OPLACONA",
+        "Wartosc_faktury_brutto": 1024.00
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 2,
+        "NIP": "1122334455",
+        "Numer_faktury": "2/2015-04-30",
+        "Status": "NIEOPLACONA",
+        "Wartosc_faktury_brutto": 8784.0
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 3,
+        "NIP": "1122334455",
+        "Numer_faktury": "3/2015-05-23",
+        "Status": "OPLACONA",
+        "Wartosc_faktury_brutto": 22.02
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 4,
+        "NIP": "0123456789",
+        "Numer_faktury": "4/2015-12-23",
+        "Status": "OPLACONA",
+        "Wartosc_faktury_brutto": 122.02
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 5,
+        "NIP": "0123456789",
+        "Numer_faktury": "5/2015-12-23",
+        "Status": "OPLACONA",
+        "Wartosc_faktury_brutto": 122.02
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 1,
+        "NIP": "1122334455",
+        "Numer_faktury": "1/2015-04-23",
+        "Status": "OPLACONA",
+        "Wartosc_faktury_brutto": 1024.00
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 2,
+        "NIP": "1122334455",
+        "Numer_faktury": "2/2015-04-30",
+        "Status": "NIEOPLACONA",
+        "Wartosc_faktury_brutto": 8784.0
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 3,
+        "NIP": "1122334455",
+        "Numer_faktury": "3/2015-05-23",
+        "Status": "OPLACONA",
+        "Wartosc_faktury_brutto": 22.02
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 1,
+        "NIP": "1122334455",
+        "Numer_faktury": "1/2015-04-23",
+        "Status": "OPLACONA",
+        "Wartosc_faktury_brutto": 1024.00
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 2,
+        "NIP": "1122334455",
+        "Numer_faktury": "2/2015-04-30",
+        "Status": "NIEOPLACONA",
+        "Wartosc_faktury_brutto": 8784.0
+    },
+    {
+        "Data_platnosci": "2020-01-02",
+        "Id": 3,
+        "NIP": "1122334455",
+        "Numer_faktury": "3/2015-05-23",
+        "Status": "OPLACONA",
+        "Wartosc_faktury_brutto": 22.02
+    }
+]

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Kontrahenci">
+
+  <title>Zarządzanie kontrahentami</title>
+
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+
+  <link href="css/css/all.min.css" rel="stylesheet">
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--<script src="vendor/script.js"></script>-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+    integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+
+
+  <!--<style>
+    .kontrahenci {
+        background-color: #ddd;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+</style>-->
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Kontrahenci</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="management.html">Zarządzanie</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="wrapper">
+          <div class="jumbotron">
+
+            <h1>Dodawanie osoby kontaktowej</h1><br>
+            <form method="post" role="form" id="addcp">
+              <input type="number" name="id_siedziby" id="id_siedziby" placeholder="ID siedziby" required="required"
+                class="form-control" /><br>
+              <input type="text" name="imie" id="imie" placeholder="Imie" required="required"
+                class="form-control" /><br>
+              <input type="text" name="nazwisko" id="nazwisko" placeholder="Nazwisko" required="required"
+                class="form-control" /><br>
+              <input type="number" name="telefon" id="telefon" placeholder="Telefon" required="required"
+                class="form-control" /><br>
+              <input type="text" name="opis" id="opis" placeholder="Opis" class="form-control" /><br>
+              <input type="text" name="adres" id="adres" placeholder="Adres" required="required"
+                class="form-control" /><br>
+              <input type="submit" class="btn btn-primary " value="Dodaj osobę kontaktową" name="addcp" /><br><br><a
+                href="contact_person.html" class="btn btn-primary">Wstecz</a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script src="cp_create.js"></script>
+      <!--- ZMIEŃ NA SCIEŻKĘ DO SKRYPTU-->
+      <script>
+        const addform = document.getElementById('addcp');
+        addform.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const obj = {
+            ID_siedziby: addcp['id_siedziby'].value,
+            Imie: addcp['imie'].value,
+            Nazwisko: addcp['nazwisko'].value,
+            Telefon: addcp['telefon'].value,
+            Opis: addcp['opis'].value,
+            Adres: addcp['adres'].value
+          }
+
+          postData(obj);
+          document.getElementById('addcp').reset();
+        })
+      </script>
+
+    </div>
+  </div><br><br>
+  <footer class="py-2 bg-dark fixed-bottom">
+    <div class="container">
+      <p class="m-0 text-center text-white">Zarządzanie kontrahentami</p>
+    </div>
+
+  </footer>
+</body>
+
+</html>
